@@ -1,0 +1,67 @@
+.users-container {
+  .fixed_header {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 790px;
+  }
+
+  .fixed_header tbody {
+    display: block;
+    width: 100%;
+    overflow: auto;
+    height: 500px;
+  }
+
+  .fixed_header thead tr {
+    display: block;
+  }
+
+  .fixed_header thead {
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  .fixed_header th,
+  .fixed_header td {
+    padding: 15px 0;
+    text-align: left;
+    width: 260px;
+    border-bottom: 1px solid #d9d9d9;
+  }
+  .fixed_header tr .delete-button {
+    display: none;
+    cursor: pointer;
+  }
+  .fixed_header tr:hover {
+    background: #f9fafb;
+    .delete-button {
+      display: flex;
+    }
+  }
+  &.loading {
+    .info-number {
+      background: linear-gradient(
+        270deg,
+        #dbd8d8 -235.8%,
+        #cbcbcb -184.24%,
+        #dbd7d7 -135.8%
+      );
+      border-radius: 4px;
+      width: 86px;
+      height: 24px;
+      margin: 6px 0;
+    }
+    .loading-row {
+      .loading-skeleton {
+        display: block;
+        background: linear-gradient(
+          270deg,
+          #dbd8d8 -235.8%,
+          #cbcbcb -184.24%,
+          #dbd7d7 -135.8%
+        );
+        border-radius: 4px;
+        height: 24px;
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+Fullstack (Frontend) assignmentPeople screenCreate ourPeoplesettings screen content (Link toFigma)The screen intended to Desktop screens, and will provide the following capabilities:●Display list of all users from external JSON, when each user contains:○email○firstName○lastName○img○status ("approved" / "pending")●Delete a user (local state only)●Search user by name / email
